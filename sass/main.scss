@@ -1,0 +1,40 @@
+@import './Helpers/variables';
+@import './Helpers/mixin';
+@import './Helpers/extend';
+
+//Vendors
+
+@import './base/reset';
+@import './base/customize';
+
+@import './Layouts/header';
+@import './Layouts/footer';
+@import './Layouts/intro';
+@import './Layouts/courses';
+@import './Layouts/viewing';
+@import './Layouts/banner';
+@import './Layouts/categories';
+@import './Layouts/students';
+@import './Layouts/partner';
+@import './Layouts/job';
+@import './Layouts/sidebarMini';
+
+@import './Components/button';
+@import './Components/cover';
+@import './Components/card';
+
+@import './Pages/home';
+
+
+//Theme(custom lại nên phải để dưới để đè code mặc định)
+@import './Theme/dark/resetDark';
+@import './Theme/dark/sidebarMiniDark';
+@import './Theme/dark/headerDark';
+@import './Theme/dark/coursesDark';
+@import './Theme/dark/buttonDark';
+@import './Theme/dark/cardDark';
+@import './Theme/dark/categoriesDark';
+@import './Theme/dark/studentsDark';
+@import './Theme/dark/partnerDark';
+@import './Theme/dark/jobDark';
+@import './Theme/dark/footerDark';

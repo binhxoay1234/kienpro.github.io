@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+        <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+        </button>
+        <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider"></div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="myNavbar navbar navbar-expand-md navbar-light">
+            <div class="d-md-none col-sm-2 col-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="col-md-9 col-xl-7 col-sm-8 col-6 myNavbar__col">
+                <div class="myNavbar__left">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-black" src="./img/logo-coral.svg" alt="logo black">
+                        <img class="logo-white" src="./img/logo-coral-white.svg" alt="logo white">
+                    </a>
+                    <div class="myNavbar__categories">
+                        <i class="fa fa-th"></i>
+                        <span>Categories</span>
+                    </div>
+                    <form class="form-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for courses">
+                            <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3 col-xl-5 col-sm-2 col-3 myNavbar--reset">
+                <div class="myNavbar__right" id="kien">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item business">
+                            <a class="nav-link" href="#">Udemy for Business</a>
+                            <div class="overlay">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                <a href="#">Try Udemy For Business</a>
+                            </div>
+                        </li>
+                        <li class="nav-item instructor">
+                            <a class="nav-link" href="#">Become an Instructor</a>
+                            <div class="overlay">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                <a href="#">Try Udemy For Business</a>
+                            </div>
+                        </li>
+                        <li class="nav-item myNavbar__cart">
+                            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item myNavbar__buttons">
+                            <button class="button button--white">Log In</button>
+                            <button class="button button--red">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- COVER -->
+    <section class="cover">
+        <div class="cover__content">
+            <h1>Learn on your schedule</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, corporis.</p>
+            <form class="cover__form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- INTRO -->
+    <section class="intro">
+        <div class="intro__content">
+            <div class="row">
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
+                        <div class="intro__details">
+                            <p>Lorem ipsum dolor .</p>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="intro__icon">
+                            <i class="fa fa-spinner"></i>
+                        </div>
+                        <div class="intro__details">
+                            <p>Lorem ipsum dolor </p>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__item">
+                        <div class="d-none d-xl-block intro__icon">
+                            <i class="fa fa-sync-alt"></i>
+                        </div>
+                        <div class="intro__details">
+                            <p>Lorem ipsum dolor</p>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COURSES -->
+    <section class="courses">
+        <div class="courses__content">
+            <div class="row">
+                <div class="col-12 col-md-3 col-xl-4 courses__left">
+                    <div>
+                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni expedita ab neque ullam!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 col-xl-8">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#dev"
+                                type="button" role="tab">Development</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design"
+                                type="button" role="tab">Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business"
+                                type="button" role="tab">Business</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="it-tab" data-bs-toggle="tab" data-bs-target="#itContent"
+                                type="button" role="tab">IT</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal"
+                                type="button" role="tab">Personal</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing"
+                                type="button" role="tab">Marketing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="photography-tab" data-bs-toggle="tab"
+                                data-bs-target="#photography" type="button" role="tab">Photography</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="dev" role="tabpanel">
+                            <div class="owl-carousel owl-theme courses__carousel">
+                                <div class="card">
+                                    <img src="./img/kh1.jpg" class="card-img-top" alt="kh1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                                <span class="card__rate">4.6</span>
+                                                <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh2.jpg" class="card-img-top" alt="kh2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh3.jpg" class="card-img-top" alt="kh3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh4.jpg" class="card-img-top" alt="kh4">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh5.jpg" class="card-img-top" alt="kh5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="./img/kh6.jpg" class="card-img-top" alt="kh6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Culpa, labore.</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="design" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="business" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="itContent" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="personal" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="marketing" role="tabpanel"></div>
+                        <div class="tab-pane fade" id="photography" role="tabpanel"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIEWING -->
+    <section class="viewing">
+        <div class="viewing__content">
+            <h2>Students are viewing</h2>
+            <div class="owl-carousel owl-theme viewing__carousel">
+                <div class="card">
+                    <img src="./img/kh8.jpg" class="card-img-top" alt="kh8">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh9.jpg" class="card-img-top" alt="kh9">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh10.jpg" class="card-img-top" alt="kh10">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh11.jpg" class="card-img-top" alt="kh11">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh12.jpg" class="card-img-top" alt="kh12">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/kh13.jpg" class="card-img-top" alt="kh13">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Culpa, labore.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit.</p>
+                        <div class="card__stars">
+                            <span>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half"></i>
+                            </span>
+                            <span class="card__rate">4.6</span>
+                            <span class="card__total">(11.597)</span>
+                        </div>
+                        <div class="card__price">
+                            <span>$179.99</span>
+                            <span>$9.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container">
+            <h2>Learn Anytime, Anywhere</h2>
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <button class="button--red">Sign up for free</button>
+            <div class="row">
+                <div class="col-6 text-end">
+                    <img src="./img/google_btn.png" alt="google btn">
+                </div>
+                <div class="col-6 text-start">
+                    <img src="./img/apple_btn.png" alt="apple btn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <div class="categories__content">
+            <h2>Top Categories</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-code"></i>
+                        <span>Development</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-chart-bar"></i>
+                        <span>Business</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-laptop"></i>
+                        <span>IT and Software</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-pencil-alt"></i>
+                        <span>Design</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-bullseye"></i>
+                        <span>Marketing</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-book"></i>
+                        <span>Personal</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-camera-retro"></i>
+                        <span>Photography</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="categories__item">
+                        <i class="fa fa-music"></i>
+                        <span>Music</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STUDENTS -->
+    <section class="students">
+        <div class="students__content">
+            <h2>What our students have to say</h2>
+            <div class="owl-carousel owl-theme students__carousel">
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh1.jpg" alt="student 1">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh2.jpg" alt="student 2">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh3.jpg" alt="student 3">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh4.jpg" alt="student 4">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh5.jpg" alt="student 5">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+                <div class="card card--feedback">
+                    <div class="card-body">
+                        <div class="card__top">
+                            <div class="card__avatar">
+                                <img src="./img/kh6.jpg" alt="student 6">
+                            </div>
+                            <div>
+                                <p class="card__name">Carol</p>
+                                <div class="card__stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, praesentium.
+                            Ipsa in eveniet maxime ex earum voluptatem, nulla aliquid laborum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARTNER -->
+    <section class="partner">
+        <div class="partner__content">
+            <h2 class="partner__text">Lorem ipsum dolor sit amet consectetur.</h2>
+            <div class="partner__imgs">
+                <div class="partner__item">
+                    <img src="./img/booking.svg" alt="booking">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/volkswagen.svg" alt="volkswagen">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/mercedes.svg" alt="mercedes">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/pinterest.svg" alt="pinterest">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/adidas.svg" alt="adidas">
+                </div>
+                <div class="partner__item">
+                    <img src="./img/paypal.svg" alt="paypal">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB -->
+    <section class="job">
+        <div class="job__content container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 border-end">
+                    <div class="job__item">
+                        <h2>Become an Instructor</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis, fugit repellendus
+                            quisquam facere officia.</p>
+                        <button class="button--red">Start teaching today</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="job__item">
+                        <h2>Udemy for Business</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam facilis, fugit repellendus
+                            quisquam facere officia.</p>
+                        <button class="button--red">Get Udemy for business</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-12 col-md-9">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Udemy For Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bold" aria-current="page" href="#">Teach on Udemy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Udemy App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Carrers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Help and Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Affiliate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Site Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Featured courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <!-- Default dropup button -->
+                    <div class="btn-group dropup text-md-end">
+                        <button type="button" class="btn button--dropup dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-globe"></i> English
+                        </button>
+                        <ul class="dropdown-menu">
+                            <!-- Dropdown menu links -->
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#">oppooppo</a></li>
+                            <li><a class="dropdown-item" href="#">india</a></li>
+                            <li><a class="dropdown-item" href="#">indonesia</a></li>
+                            <li><a class="dropdown-item" href="#">ZhongGuo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__bottom">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img class="logo-black" src="./img/logo-coral.svg" alt="logo black">
+                    <img class="logo-white" src="./img/logo-coral-white.svg" alt="logo white">
+                    <span>CpyRight hihihi</span>
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="nav justify-content-md-end">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Xin chao ban nho lau roi</a>
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- OWL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- CDN BS5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.courses__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 0
+                },
+                600: {
+                    items: 3,
+                    margin: 5
+                },
+                1000: {
+                    items: 4,
+                    margin: 10
+                },
+                1200: {
+                    items: 4,
+                    margin: 3
+                },
+                1241: {
+                    items: 4
+                }
+            }
+        })
+        $('.viewing__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 3
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 6,
+                    margin: 5
+                }
+            }
+        })
+        $('.students__carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                900: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
